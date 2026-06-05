@@ -1,65 +1,221 @@
 import Image from "next/image";
+import Link from "next/link";
+import { stories } from "@/data/stories";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div>
+      {/* 1. HERO SECTION */}
+      <section className="relative py-28 px-6 text-center bg-gradient-to-b from-surface-card via-surface-canvas to-surface-canvas border-b border-surface-card">
+        <div className="max-w-4xl mx-auto">
+          <span className="text-sm font-bold tracking-widest text-foundation-crimson uppercase bg-foundation-crimson/5 px-4 py-1.5 rounded-full">
+            SDG-Aligned & Global
+          </span>
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foundation-maroon mt-8 mb-6 leading-tight">
+            From classrooms to communities, we champion education and women’s empowerment for lasting change.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="text-lg md:text-xl text-text-body mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
+            Together, we can break down systemic barriers and build communities rooted in dignity, equality, and opportunity.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <Link 
+              href="donate" 
+              className="w-full sm:w-auto bg-foundation-crimson text-white px-8 py-4 rounded-lg font-semibold text-sm shadow-md hover:bg-foundation-maroon transition-all shadow-xs"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Donate Now
+            </Link>
+            <Link 
+              href="programs" 
+              className="w-full sm:w-auto border border-foundation-tan text-foundation-maroon px-8 py-4 rounded-lg font-semibold text-sm hover:bg-surface-card transition-all"
             >
-              Learning
-            </a>{" "}
-            center.
+              Our Programs
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. ABOUT US SECTION (OPTIMIZED & SHORTENED) */}
+      <section id="about" className="py-24 px-6 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+        <div className="md:col-span-7 space-y-6 text-base text-text-body font-normal leading-relaxed">
+          <h2 className="font-serif text-3xl font-bold text-foundation-maroon mb-2">Who We Are</h2>
+          <p>
+            The Maayi Mary Mbuya Foundation helps children from vulnerable backgrounds by strengthening family structures and expanding access to quality education. Established in honor of Maayi Mary Mbuya, we embody her legacy of compassion to build real community resilience and multi-generational opportunity.
+          </p>
+          
+          <div className="bg-surface-canvas p-6 rounded-xl border border-surface-card border-l-4 border-l-foundation-tan shadow-xs mt-4">
+            <h3 className="font-serif text-xl font-bold text-foundation-maroon mb-2">Our Mission</h3>
+            <p className="text-sm sm:text-base text-text-body leading-relaxed font-normal">
+              We partner with students, parents, and schools to ensure children complete their education with dignity. Alongside schooling, we champion women’s economic independence through localized, professional training tailored to regional community contexts.
+            </p>
+          </div>
+        </div>
+
+        <div className="md:col-span-5 space-y-4">
+          <div className="p-6 bg-white rounded-xl shadow-xs border border-surface-card">
+            <h3 className="font-serif text-lg font-bold text-foundation-maroon mb-2">Our Story</h3>
+            <p className="text-sm text-text-body leading-relaxed font-normal">
+              Inspired by our founder’s international development and global health background, our work took root during the 2020 pandemic. What began as immediate economic relief for daily-wage women has evolved into structural programs for deep, long-term community recovery.
+            </p>
+          </div>
+
+          <div className="p-6 bg-white rounded-xl shadow-xs border border-surface-card">
+            <h3 className="font-serif text-lg font-bold text-foundation-maroon mb-2">Global Alignment</h3>
+            <p className="text-sm text-text-body leading-relaxed font-normal mb-4">
+              Our localized programs directly target UN Sustainable Development goals to secure freedom from poverty for girls through stable social protection, robust healthcare access, and quality education.
+            </p>
+            <div className="flex flex-wrap gap-1.5 pt-3 border-t border-surface-card">
+              {['SDG 1', 'SDG 3', 'SDG 4', 'SDG 5', 'SDG 8'].map((sdg) => (
+                <span key={sdg} className="text-[10px] font-bold bg-surface-canvas border border-surface-card text-foundation-maroon px-2 py-0.5 rounded-md">
+                  {sdg}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. APPROACH / PILLARS */}
+      <section className="bg-surface-card/60 py-24 px-6 border-t border-b border-surface-card">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <h2 className="font-serif text-3xl font-bold text-foundation-maroon mb-4">Our Approach</h2>
+            <p className="text-base text-text-body font-normal leading-relaxed">
+              We believe that lasting change comes from holistic, community-driven interventions designed to remove everyday barriers to education, nurture personal growth, and empower families.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-xs border border-surface-card">
+              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-crimson mb-4">01 / Educate</div>
+              <p className="text-sm md:text-base text-text-body/90 leading-relaxed font-normal">
+                Targeted tuition assistance combined with our accountability-focused Tripartite Agreement (Organization, Student, Parent) ensures full secondary pathways and consistent educational support.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-xs border border-surface-card">
+              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-tan mb-4">02 / Empower</div>
+              <p className="text-sm md:text-base text-text-body/90 leading-relaxed font-normal">
+                Providing business seed funding, facilitating local Village Savings and Loan Associations (VSLAs), and scaling enterprise training models to build reliable income streams for single mothers and caregivers.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-xl shadow-xs border border-surface-card">
+              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-maroon mb-4">03 / Restore</div>
+              <p className="text-sm md:text-base text-text-body/90 leading-relaxed font-normal">
+                Integrating nutritional monitoring and home garden training setups (such as micro-container layouts) to improve household food security and eliminate deep foundational vulnerabilities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 4. PROGRAM OVERVIEW */}
+      <section id="programs" className="py-24 px-6 max-w-6xl mx-auto">
+        <div className="border-b border-surface-card pb-12 mb-12">
+          <h2 className="font-serif text-3xl font-bold text-foundation-maroon mb-4">Core Program Pillars</h2>
+          <p className="text-base text-text-body max-w-3xl font-normal leading-relaxed">
+            Children from disadvantaged communities—especially talented girls—face steep structural barriers that prevent them from staying in school. By directly investing in their success, we unlock human potential that elevates entire regional networks.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {[
+            { title: "Education Sponsorship", desc: "Covers full secondary tuition fees, textbook kits, academic tracking, and comprehensive youth wellness workshops." },
+            { title: "Family & Caregiver Growth", desc: "Provides micro-enterprise grants, direct business mentoring loops, and collaborative local savings circle pairings." },
+            { title: "Hygiene & Dignity Support", desc: "Distributes monthly reproductive health resource supplies paired with localized health education sessions." },
+            { title: "Nutrition Systems", desc: "Coordinates essential household nutritional food relief alongside training in resilient, small-scale farming methods." }
+          ].map((prog, i) => (
+            <div key={i} className="p-6 border border-surface-card rounded-xl bg-white hover:border-foundation-tan transition-all shadow-xs">
+              <h4 className="font-serif text-lg font-bold text-foundation-maroon mb-2 tracking-tight">{prog.title}</h4>
+              <p className="text-sm text-text-body/90 leading-relaxed font-normal">{prog.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* 5. IMPACT STORIES PREVIEW GRID */}
+      <section id="impact" className="bg-surface-card/40 py-24 px-6 border-t border-surface-card">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-12">
+            <h2 className="font-serif text-3xl font-bold text-foundation-maroon mb-2">Real Impact</h2>
+            <p className="text-base text-text-body font-normal">Behind every milestone is a lived journey of resilience, determination, and community change.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {stories.map((story) => (
+              <div 
+                key={story.id} 
+                className="group bg-white rounded-xl border border-surface-card shadow-sm flex flex-col justify-between overflow-hidden hover:shadow-md transition-all duration-200"
+              >
+                <div>
+                  <div className="relative aspect-video w-full bg-surface-canvas overflow-hidden border-b border-surface-card">
+                    <Image
+                      src={story.image}
+                      alt={`Cover visual celebrating ${story.title}`}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-102"
+                      sizes="(max-w-768px) 100vw, (max-w-1200px) 33vw, 350px"
+                    />
+                  </div>
+
+                  <div className="p-8">
+                    <span className="text-xs font-bold uppercase tracking-widest text-foundation-crimson block mb-3">
+                      {story.category}
+                    </span>
+                    <h3 className="font-serif text-lg md:text-xl font-bold text-foundation-maroon mb-3 leading-snug group-hover:text-foundation-crimson transition-colors">
+                      {story.title}
+                    </h3>
+                    <p className="text-sm text-text-body leading-relaxed line-clamp-3 font-normal">
+                      {story.previewText}
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="p-8 pt-0 border-t border-surface-canvas bg-surface-canvas/40">
+                  <Link href={`/impact/${story.id}`} className="text-sm font-bold text-foundation-crimson hover:text-foundation-maroon transition-colors flex items-center gap-1">
+                    Read Full Story &rarr;
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. VISION & FOUNDER SECTOR */}
+      <section className="py-24 px-6 max-w-4xl mx-auto text-center">
+        <div className="mb-16">
+          <h3 className="font-serif text-base font-bold text-foundation-maroon tracking-widest uppercase mb-4">Our Vision</h3>
+          <p className="font-serif text-2xl md:text-3xl text-foundation-maroon italic font-normal leading-relaxed px-4">
+            “A society where every child has access to education, everyday dignity, and the genuine opportunity to build a self-reliant future.”
+          </p>
+        </div>
+        
+        <div className="border-t border-surface-card pt-16 flex flex-col items-center">
+          <div className="relative w-24 h-24 bg-surface-canvas border border-surface-card rounded-full overflow-hidden mb-4 shadow-xs">
+            <div className="absolute inset-0 flex items-center justify-center font-serif text-foundation-maroon font-bold text-xl bg-foundation-cream/30">
+              MM
+            </div>
+            <Image 
+              src="/about/founder.jpg" 
+              alt="Founder of Maayi Mary Mbuya Foundation"
+              fill
+              className="object-cover"
+            /> 
+          </div>
+          
+          <h4 className="font-serif text-xl font-bold text-foundation-maroon">Meet Our Founder</h4>
+          <p className="text-base text-text-body/90 max-w-xl mt-3 mb-6 font-normal leading-relaxed">
+            International development and global health expert championing localized, community-led models across Bungoma, Kisumu, and Nairobi Counties.
+          </p>
+          <a 
+            href="#" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="inline-block bg-foundation-maroon text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-foundation-crimson transition-colors shadow-xs"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            Connect on LinkedIn &rarr;
           </a>
         </div>
-      </main>
+      </section>
     </div>
   );
 }

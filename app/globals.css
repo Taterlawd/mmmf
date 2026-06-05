@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Logo Accents */
+  --color-foundation-crimson: #AF1E36;
+  --color-foundation-maroon: #581423;
+  --color-foundation-tan: #D68B4F;
+  --color-foundation-cream: #F1D6A1;
+
+  /* Grounded Legacy Theme Surfaces */
+  --color-surface-canvas: #FAF8F5;
+  --color-surface-card: #F2ECE4;
+
+  /* Typography Colors */
+  --color-text-body: #2D3142;
+  --color-text-muted: #5C6275;
+
+  /* Font Mappings (Maps to the Next.js font variables loaded in layout.tsx) */
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Base resets using the newly defined theme variables */
+html, body {
+  background-color: var(--color-surface-canvas);
+  color: var(--color-text-body);
 }
