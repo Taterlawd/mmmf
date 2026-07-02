@@ -21,7 +21,7 @@ export default function ProgramsPage() {
       ]
     },
     {
-      title: "Empower",
+      title: "Advance",
       image: "/programs/empower.jpg",
       details: [
         "Seed Capital and Funding: To help overcome the barrier of limited resources, we offer targeted financial support. These small investments enable local women to buy stock, acquire essential tools, or secure stable business premises, laying a solid groundwork for long-term independence.",
@@ -35,10 +35,10 @@ export default function ProgramsPage() {
       image: "/programs/restore.jpg",
       details: [
         "Nutritional Education: We host practical workshops and share educational materials focused on balanced diets, everyday hygiene, and using affordable, locally available foods. This helps families make healthier choices without relying on expensive outside resources.",
+        "Health Awareness: We promote preventive health habits by sharing clear information on hygiene, recognizing common illnesses early, and encouraging regular medical check-ups to keep households healthy and secure.",
         "Agricultural Training: Hands-on training gives families small-scale, intensive farming techniques like container gardening and vertical farming. These methods are tailored for limited spaces, letting families grow fresh, nutritious food right at home.",
-        "Resource Support: To back up our training, we provide high-yield seeds, essential gardening tools, and guidance on organic soil health and composting so families can sustain their gardens over time.",
-        "Health Awareness: We promote preventive health habits by sharing clear information on hygiene, recognizing common illnesses early, and encouraging regular medical check-ups to keep households healthy and secure."
-      ]
+        "Resource Support: To back up our training, we provide high-yield seeds, essential gardening tools, and guidance on organic soil health and composting so families can sustain their gardens over time."
+        ]
     }
   ];
 
@@ -50,9 +50,9 @@ export default function ProgramsPage() {
       outcome: "Students stay in school continuously, their academic performance improves, their self-esteem grows, and they graduate ready for higher learning or professional skills training."
     },
     {
-      name: "Family & Community Empowerment Program",
+      name: "Family & Community Advancement Program",
       challenge: "Many parents and caregivers struggle to earn a reliable income due to a lack of capital, business tools, and mentorship, which creates intense household stress and hurts a child's nutrition and education.",
-      intervention: "We support caregivers through practical economic empowerment, providing initial seed capital, regular business monitoring, smartphones for communication, and peer-to-peer support through local Chama networks.",
+      intervention: "We support caregivers through practical economic advancement, providing initial seed capital, regular business monitoring, smartphones for communication, and peer-to-peer support through local Chama networks.",
       outcome: "Families build stable income streams, household financial stress drops, parents are fully equipped to support their children, and communities build a culture of mutual support."
     },
     {
@@ -61,12 +61,7 @@ export default function ProgramsPage() {
       intervention: "We promote health and dignity by distributing sanitary towels monthly, providing underwear and hygiene packs to both boys and girls, and running health education sessions to remove shame.",
       outcome: "Girls attend classes consistently and confidently, menstrual stigma is completely minimized, and young people are protected from harmful coping mechanisms."
     },
-    {
-      name: "Nutrition Support Program",
-      challenge: "Food insecurity is a daily struggle for many households, particularly during illness or economic crises, which directly impacts a child's focus, health, and academic performance.",
-      intervention: "We address immediate hunger through crisis food relief and community feeding programs, while developing long-term projects like school-based greenhouses managed by student volunteers.",
-      outcome: "Children enjoy better health and concentration in class, families find relief from food insecurity, and students pick up valuable agricultural and sustainability skills."
-    }
+    
   ];
 
   return (
@@ -139,7 +134,7 @@ export default function ProgramsPage() {
       {/* Structured Programs Breakdown Matrix */}
       <section className="space-y-12">
         <div className="border-b border-surface-card pb-4">
-          <h2 className="font-serif text-3xl font-bold text-foundation-maroon">Detailed Operational Matrix</h2>
+          <h2 className="font-serif text-3xl font-bold text-foundation-maroon">Program Framework</h2>
         </div>
         
         {structuralPrograms.map((prog, idx) => (

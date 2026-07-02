@@ -46,7 +46,7 @@ export default function AboutPage() {
         <div className="bg-surface-canvas p-8 rounded-xl border border-surface-card shadow-xs">
           <h3 className="font-serif text-xl font-bold text-foundation-maroon mb-3">Our Mission</h3>
           <p className="text-base text-text-body leading-relaxed font-normal">
-            To remove the educational barriers faced by vulnerable children through direct sponsorship, health and dignity support, and the economic empowerment of their families.
+            To remove the educational barriers faced by vulnerable children through direct sponsorship, health and dignity support, and the economic advancement of their families.
           </p>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function AboutPage() {
             As an international development and global health expert, her advocacy builds community-centered operational models tailored explicitly to the regional realities of girls and women across Bungoma, Kisumu, and Nairobi Counties.
           </p>
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/helenbokea/" 
             target="_blank" 
             rel="noreferrer" 
             className="inline-block bg-foundation-maroon text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-foundation-crimson transition-colors shadow-xs"

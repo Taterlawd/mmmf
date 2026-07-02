@@ -8,25 +8,18 @@ export default function HomePage() {
       {/* 1. HERO SECTION */}
       <section className="relative py-28 px-6 text-center bg-gradient-to-b from-surface-card via-surface-canvas to-surface-canvas border-b border-surface-card">
         <div className="max-w-4xl mx-auto">
-          <span className="text-sm font-bold tracking-widest text-foundation-crimson uppercase bg-foundation-crimson/5 px-4 py-1.5 rounded-full">
-            SDG-Aligned & Global
-          </span>
+          
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foundation-maroon mt-8 mb-6 leading-tight">
-            From classrooms to communities, we champion education and women’s empowerment for lasting change.
+            Educating boys and girls, advancing women, transforming communities Breaking barriers, building dignity and opportunity
           </h1>
           <p className="text-lg md:text-xl text-text-body mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
             Together, we can break down systemic barriers and build communities rooted in dignity, equality, and opportunity.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link 
-              href="donate" 
-              className="w-full sm:w-auto bg-foundation-crimson text-white px-8 py-4 rounded-lg font-semibold text-sm shadow-md hover:bg-foundation-maroon transition-all shadow-xs"
-            >
-              Donate Now
-            </Link>
+            
             <Link 
               href="programs" 
-              className="w-full sm:w-auto border border-foundation-tan text-foundation-maroon px-8 py-4 rounded-lg font-semibold text-sm hover:bg-surface-card transition-all"
+              className="inline-block text-center bg-foundation-crimson text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-foundation-maroon transition-colors shadow-xs shrink-0"
             >
               Our Programs
             </Link>
@@ -39,13 +32,13 @@ export default function HomePage() {
         <div className="md:col-span-7 space-y-6 text-base text-text-body font-normal leading-relaxed">
           <h2 className="font-serif text-3xl font-bold text-foundation-maroon mb-2">Who We Are</h2>
           <p>
-            The Maayi Mary Mbuya Foundation helps children from vulnerable backgrounds by strengthening family structures and expanding access to quality education. Established in honor of Maayi Mary Mbuya, we embody her legacy of compassion to build real community resilience and multi-generational opportunity.
+            The Maayi Mary Mbuya Foundation is dedicated to uplifting children from vulnerable backgrounds by strengthening family structures and expanding access to quality education. Founded in honor of Maayi Mary Mbuya, we carry forward her enduring legacy of compassion—building true community resilience and opening pathways to multi-generational opportunity.
           </p>
           
           <div className="bg-surface-canvas p-6 rounded-xl border border-surface-card border-l-4 border-l-foundation-tan shadow-xs mt-4">
             <h3 className="font-serif text-xl font-bold text-foundation-maroon mb-2">Our Mission</h3>
             <p className="text-sm sm:text-base text-text-body leading-relaxed font-normal">
-              We partner with students, parents, and schools to ensure children complete their education with dignity. Alongside schooling, we champion women’s economic independence through localized, professional training tailored to regional community contexts.
+              We work hand in hand with students, parents, and schools to ensure every child completes their education with dignity. Beyond the classroom, we strengthen women’s economic independence by providing seed funding to grow local businesses and supporting the establishment of village savings groups—practical pathways that build resilience and prosperity within communities.
             </p>
           </div>
         </div>
@@ -54,14 +47,14 @@ export default function HomePage() {
           <div className="p-6 bg-white rounded-xl shadow-xs border border-surface-card">
             <h3 className="font-serif text-lg font-bold text-foundation-maroon mb-2">Our Story</h3>
             <p className="text-sm text-text-body leading-relaxed font-normal">
-              Inspired by our founder’s international development and global health background, our work took root during the 2020 pandemic. What began as immediate economic relief for daily-wage women has evolved into structural programs for deep, long-term community recovery.
+              Rooted in our founder’s international development and global health experience, the Maayi Mary Mbuya Foundation emerged during the 2020 pandemic. What began as urgent economic relief for daily‑wage women has grown into long‑term, structural programs—supporting boys and girls to complete their education and enabling women to build resilient livelihoods through seed funding and village savings groups. Together, these efforts break barriers and create communities grounded in dignity, equality, and opportunity.
             </p>
           </div>
 
           <div className="p-6 bg-white rounded-xl shadow-xs border border-surface-card">
             <h3 className="font-serif text-lg font-bold text-foundation-maroon mb-2">Global Alignment</h3>
             <p className="text-sm text-text-body leading-relaxed font-normal mb-4">
-              Our localized programs directly target UN Sustainable Development goals to secure freedom from poverty for girls through stable social protection, robust healthcare access, and quality education.
+              Our work advances the UN Sustainable Development Goals by ensuring boys and girls access quality education, healthcare, and social protection. Coupled with women’s economic opportunity through seed funding and savings groups, we help communities break barriers and build lasting resilience.
             </p>
             <div className="flex flex-wrap gap-1.5 pt-3 border-t border-surface-card">
               {['SDG 1', 'SDG 3', 'SDG 4', 'SDG 5', 'SDG 8'].map((sdg) => (
@@ -80,7 +73,7 @@ export default function HomePage() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="font-serif text-3xl font-bold text-foundation-maroon mb-4">Our Approach</h2>
             <p className="text-base text-text-body font-normal leading-relaxed">
-              We believe that lasting change comes from holistic, community-driven interventions designed to remove everyday barriers to education, nurture personal growth, and empower families.
+              We believe that lasting change comes from holistic, community-driven interventions designed to remove everyday barriers to education, nurture personal growth, and support families.
             </p>
           </div>
 
@@ -92,7 +85,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xs border border-surface-card">
-              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-tan mb-4">02 / Empower</div>
+              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-tan mb-4">02 / Advance Seed Capital and Funding</div>
               <p className="text-sm md:text-base text-text-body/90 leading-relaxed font-normal">
                 Providing business seed funding, facilitating local Village Savings and Loan Associations (VSLAs), and scaling enterprise training models to build reliable income streams for single mothers and caregivers.
               </p>

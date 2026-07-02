@@ -90,10 +90,10 @@ export default async function StoryDetailPage({ params }: PageProps) {
             {story.cta.closing}
           </p>
           <Link 
-            href="/donate" 
+            href="/contact" 
             className="inline-block text-center bg-foundation-crimson text-white text-sm font-semibold px-6 py-3 rounded-lg hover:bg-foundation-maroon transition-colors shadow-xs shrink-0"
           >
-            Donate Today
+            Get Involved
           </Link>
         </div>
       </footer>

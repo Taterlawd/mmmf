@@ -32,10 +32,10 @@ export default function Navbar() {
             <Link href="/programs" className="hover:text-foundation-crimson transition-colors">Our Programs</Link>
             <Link href="/impact" className="hover:text-foundation-crimson transition-colors">Real Impact</Link>
             <Link 
-              href="/donate" 
+              href="/contact" 
               className="bg-foundation-crimson text-white px-5 py-2.5 rounded-lg text-xs font-semibold hover:bg-foundation-maroon transition-colors shadow-xs"
             >
-              Donate Now
+              Get involved
             </Link>
           </div>
 
@@ -108,11 +108,11 @@ export default function Navbar() {
           </Link>
           <div className="pt-4">
             <Link
-              href="/donate"
+              href="/contact"
               onClick={() => setIsOpen(false)}
               className="block w-full text-center bg-foundation-crimson text-white text-sm font-bold tracking-wide py-3.5 rounded-xl hover:bg-foundation-maroon transition-colors"
             >
-              Donate Now
+              Get involved
             </Link>
           </div>
         </div>
