@@ -13,7 +13,7 @@ export default function HomePage() {
             Educating boys and girls, advancing women, transforming communities
           </h1>
           <p className="text-lg md:text-xl text-text-body mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
-            From classrooms to communities, cultivating dignity,equity and opportunity..
+            From classrooms to communities, cultivating dignity,equity and opportunity.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             
