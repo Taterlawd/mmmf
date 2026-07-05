@@ -10,10 +10,10 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto">
           
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foundation-maroon mt-8 mb-6 leading-tight">
-            Educating boys and girls, advancing women, transforming communities Breaking barriers, building dignity and opportunity
+            Educating boys and girls, advancing women, transforming communities
           </h1>
           <p className="text-lg md:text-xl text-text-body mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
-            Together, we can break down systemic barriers and build communities rooted in dignity, equality, and opportunity.
+            From classrooms to communities, cultivating dignity,equity and opportunity..
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             
@@ -36,7 +36,7 @@ export default function HomePage() {
           </p>
           
           <div className="bg-surface-canvas p-6 rounded-xl border border-surface-card border-l-4 border-l-foundation-tan shadow-xs mt-4">
-            <h3 className="font-serif text-xl font-bold text-foundation-maroon mb-2">Our Mission</h3>
+            <h3 className="font-serif text-xl font-bold text-foundation-maroon mb-2">What we do</h3>
             <p className="text-sm sm:text-base text-text-body leading-relaxed font-normal">
               We work hand in hand with students, parents, and schools to ensure every child completes their education with dignity. Beyond the classroom, we strengthen women’s economic independence by providing seed funding to grow local businesses and supporting the establishment of village savings groups—practical pathways that build resilience and prosperity within communities.
             </p>
@@ -85,9 +85,9 @@ export default function HomePage() {
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xs border border-surface-card">
-              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-tan mb-4">02 / Advance Seed Capital and Funding</div>
+              <div className="text-xl md:text-2xl font-serif font-bold text-foundation-tan mb-4">02 / Advance </div>
               <p className="text-sm md:text-base text-text-body/90 leading-relaxed font-normal">
-                Providing business seed funding, facilitating local Village Savings and Loan Associations (VSLAs), and scaling enterprise training models to build reliable income streams for single mothers and caregivers.
+                Providing business seed funding, facilitating local Village Savings and Loan Associations (VSLAs), and scaling enterprise training models to build reliable income streams for parents and caregivers.
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-xs border border-surface-card">

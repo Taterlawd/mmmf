@@ -46,7 +46,7 @@ export default function AboutPage() {
         <div className="bg-surface-canvas p-8 rounded-xl border border-surface-card shadow-xs">
           <h3 className="font-serif text-xl font-bold text-foundation-maroon mb-3">Our Mission</h3>
           <p className="text-base text-text-body leading-relaxed font-normal">
-            To remove the educational barriers faced by vulnerable children through direct sponsorship, health and dignity support, and the economic advancement of their families.
+            To dismantle educational barriers faced by vulnerable children through direct sponsorship, health and dignity support, and the economic advancement of their families.
           </p>
         </div>
       </section>
