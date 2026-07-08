@@ -61,20 +61,20 @@ export const stories: Story[] = [
   },
   {
     id: "marys-story",
-    title: "Mary’s Story: Restoring Dignity, Transforming Education",
+    title: "Mary Treaza’s Story: Restoring Dignity, Transforming Education",
     subtitle: "Mary Treaza—a dedicated teacher, consultant, and long-time community advocate—became a vital link between vulnerable learners and support.",
     category: "Community Advocates",
-    previewText: "Mary confided in a friend about a silent crisis in her school: girls missing classes simply because they lacked sanitary towels. The Foundation responded immediately.",
+    previewText: "Mary Treaza confided in a friend about a silent crisis in her school: girls missing classes simply because they lacked sanitary towels. The Foundation responded immediately.",
     quote: "This support has changed everything.",
     image: "/impact/mary.jpg",
     fullStory: [
       "Mary Treaza—a dedicated teacher, consultant, and long-time community advocate—never imagined she would become a vital link between vulnerable learners and life-changing support. Her journey with the Maayi Mary Mbuya Foundation (MMMF) began when she confided in a friend about a silent crisis in her school: girls missing classes simply because they lacked sanitary towels, and boys struggling without even basic hygiene supplies.",
       "The Foundation responded immediately. Sanitary towels, underwear, soap, oil, and dental kits began reaching students every month. The impact was profound: Absenteeism dropped dramatically, dropout rates fell to zero, there were no pregnancies or elopements, and confidence returned—no more shame or fear in class. Boys’ hygiene improved significantly, especially dental health.",
-      "Mary had once tried to buy pads from her own pocket, but she couldn’t sustain it alone. MMMF multiplied her efforts, enabling her to launch a Hygiene & Dignity Program where girls learn about menstruation and self-care, boys are educated to reduce stigma, and students support one another in a culture of respect.",
-      "Today, her school is safer, cleaner, and more supportive. Learners from humble backgrounds feel seen, valued, and cared for. Mary is deeply grateful: 'This support has changed everything.' She emphasizes that continued support will keep girls in school—and one day, these same girls will grow up to support others."
+      "Mary Treaza had once tried to buy pads from her own pocket, but she couldn’t sustain it alone. MMMF multiplied her efforts, enabling her to launch a Hygiene & Dignity Program where girls learn about menstruation and self-care, boys are educated to reduce stigma, and students support one another in a culture of respect.",
+      "Today, her school is safer, cleaner, and more supportive. Learners from humble backgrounds feel seen, valued, and cared for. Mary Treaza is deeply grateful: 'This support has changed everything.' She emphasizes that continued support will keep girls in school—and one day, these same girls will grow up to support others."
     ],
     cta: {
-      title: " Support More Programs Like Mary’s",
+      title: " Support More Programs Like Mary Treaza’s",
       bullets: [
         "Provide hygiene packs for girls and boys",
         "Support dignity programs that reduce stigma and empower learners",

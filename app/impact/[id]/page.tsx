@@ -47,7 +47,7 @@ export default async function StoryDetailPage({ params }: PageProps) {
             src={story.image}
             alt={`Portrait celebrating ${story.title}`}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
             sizes="(max-w-768px) 100vw, 400px"
           />
@@ -64,11 +64,11 @@ export default async function StoryDetailPage({ params }: PageProps) {
 
         {/* Sidebar Pull-Quote Component */}
         <aside className="md:col-span-4 bg-surface-canvas p-6 rounded-xl border border-surface-card border-l-4 border-l-foundation-crimson shadow-xs sticky top-6">
-          <span className="text-4xl font-serif text-foundation-crimson/30 block -mb-4">&ldquo;</span>
+          
           <p className="font-serif text-lg text-foundation-maroon italic leading-relaxed font-normal">
-            {story.quote}
+            &quot;{story.quote}&quot;
           </p>
-          <span className="text-4xl font-serif text-foundation-crimson/30 block text-right -mt-2">&rdquo;</span>
+          
         </aside>
       </div>
 

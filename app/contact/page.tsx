@@ -68,10 +68,10 @@ export default function ContactPage() {
                 <div className="pt-4 border-t border-surface-canvas">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-foundation-crimson mb-1">Email Inquiries</h4>
                   <a 
-                    href="mailto:maayimarymbuyafoundation@gmail.com"
+                    href="mailto:maayimmf@gmail.com"
                     className="text-sm sm:text-base text-foundation-maroon font-semibold hover:text-foundation-crimson transition-colors"
                   >
-                    maayimarymbuyafoundation@gmail.com
+                    maayimmf@gmail.com
                   </a>
                 </div>
 

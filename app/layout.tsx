@@ -41,7 +41,7 @@ export default function RootLayout({
             <div className="mb-6 md:mb-0">
               <h3 className="font-serif text-2xl font-bold text-surface-canvas">Maayi Mary Mbuya Foundation</h3>
               <p className="text-sm text-surface-card/80 mt-2 max-w-sm font-light">
-                From classrooms to communities, cultivating dignity,equity and opportunity.
+                From classrooms to communities, cultivating dignity, equity and opportunity.
               </p>
             </div>
             <p className="text-xs text-surface-card/60">

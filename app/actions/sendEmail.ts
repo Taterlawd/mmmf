@@ -22,7 +22,7 @@ export async function sendContactEmail(formData: FormData) {
       // While testing, you can use Resend's default onboarding email address:
       from: "Maayi Mary Mbuya Foundation <onboarding@resend.dev>",
       // Change this to the actual inbox where you want to receive inquiries:
-      to: ["your-organization-email@gmail.com"], 
+      to: ["maayimmf@gmail.com"], 
       replyTo: email, // This lets you hit "Reply" in your email app to reply directly to the user
       subject: `New Contact Form Inquire: ${subject}`,
       html: `
